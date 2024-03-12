@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <form class="login-form">
+      <h2>Login</h2>
+      <div class="input-group">
+        <span class="input-icon"><i class="fa fa-user"></i></span>
+        <input type="text" id="username" name="username" placeholder="Kullanıcı adını giriniz" required> 
+      </div>
+      <div class="input-group">
+        <span class="input-icon"><i class="fas fa-lock"></i></span>
+        <input type="password" id="password" name="password" placeholder="Şifrenizi giriniz" required>
+        <span class="toggle-password" onclick="togglePassword()"><i class="fas fa-eye"></i></span>
+      </div>
+      <button type="submit">Login</button>
+      <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
